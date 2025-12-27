@@ -40,12 +40,12 @@ on:
           - ubuntu-22.04
           - ubuntu-24.04
 
-  #push:
-  # branches: 
-  #  - master
+  push:
+    branches: 
+     - master
         
-  schedule:
-   - cron: 07 3 * * 4
+  #schedule:
+  # - cron: 07 3 * * 4
         
   #watch:
   # types: [started]
