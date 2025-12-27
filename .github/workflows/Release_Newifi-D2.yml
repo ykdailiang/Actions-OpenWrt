@@ -40,12 +40,12 @@ on:
           - ubuntu-22.04
           - ubuntu-24.04
 
-  #push:
-  # branches: 
-  #  - master
+  push:
+   branches: 
+    - master
         
-  schedule:
-   - cron: 07 3 * * 4
+  #schedule:
+   #- cron: 07 3 * * 4
         
   #watch:
   # types: [started]
@@ -74,10 +74,10 @@ jobs:
     - name: 设置固件源
       run: |
         if [ "${{ inputs.model }}" = "Newifi-D2_imm" ]; then
-            echo "REPO_URL=https://github.com/immortalwrt/immortalwrt" >> $GITHUB_ENV
+            echo "REPO_URL=https://github.com/ykdailiang/immortalwrt" >> $GITHUB_ENV
             echo "REPO=immortalwrt" >> $GITHUB_ENV
           else
-            echo "REPO_URL=https://github.com/coolsnowwolf/lede" >> $GITHUB_ENV
+            echo "REPO_URL=https://github.com/ykdailiang/lede" >> $GITHUB_ENV
             echo "REPO=lede" >> $GITHUB_ENV
             echo "DIY_breakings_SH=sh/breakings_diy-part2.sh" >> $GITHUB_ENV
         fi
