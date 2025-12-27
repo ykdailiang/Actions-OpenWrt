@@ -1,10 +1,15 @@
 **中文** | [上游源代码](https://github.com/P3TERX/Actions-OpenWrt)
 
-newifi3 升级64M flash 刷最新64M 
+newifi3 升级64M flash 刷最新64M
+
 Fork coolsnowwolf/lede为 自己的项目，https://github.com/你的lede项目/lede.git
+
 进入lede/target/linux/ramips/image/mt7621.mk 改固件大小65216k
+
 进入lede/target/linux/ramips/dts/mt7621_d-team_newifi-d2.dts 改固件16进制大小 0x3fb0000。
+
 进入 你的项目/.github/workflows/Build_OpenWrt_Newifi-D2.yml
+
 改内容  REPO_URL: https://github.com/你的lede项目/lede.git
 
 <div align="center">
