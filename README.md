@@ -1,5 +1,7 @@
 **中文** | [上游源代码](https://github.com/P3TERX/Actions-OpenWrt)
 
+不稳定，太卡，不知道那问题。
+
 newifi3 升级64M flash 刷最新64M
 
 Fork coolsnowwolf/lede为 自己的项目，https://github.com/你的lede项目/lede.git
